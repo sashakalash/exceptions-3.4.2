@@ -38,7 +38,7 @@ public class Main {
 
     public static void validEvent(Event event) {
         if (event.title.isEmpty() || event.releaseYear == 0 || event.age == 0) {
-            throw new RuntimeException();
+            throw new RuntimeException("Ошибка при создании события");
         }
     }
 
